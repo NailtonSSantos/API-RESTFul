@@ -20,7 +20,7 @@
   "homepage": "https://github.com/NailtonSSantos/API-RESTFul#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "mongoose": "^6.2.9"
+    "mongoose": "^5.13.14"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
