@@ -26,7 +26,7 @@ async function post(req, res){
     product.save()
 
     res.send({
-        message: 'Sucess'
+        message: 'success'
     })
 
 }
@@ -37,7 +37,7 @@ async function put(req, res){
     const product = await ProductsModel.findOneAndUpdate({ _id: id }, req.body, {new: true})
 
     res.send({
-        message: 'Sucess!',
+        message: 'success',
         product,
     }) 
 
@@ -56,7 +56,7 @@ async function remove(req, res){
 
     const remove = await ProductsModel.deleteOne({ _id: id })
     
-    const message =  remove.ok ? "sucess!" : 'error'
+    const message =  remove.ok ? "success" : 'error'
 
     res.send({
         message
